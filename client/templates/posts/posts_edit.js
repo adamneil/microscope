@@ -3,9 +3,8 @@ Template.postEdit.events({
         e.preventDefault();
         var currentPostId = this._id;
         var postProperties = {
-            url: $(e.target).find('[name=url]').val(),
             title: $(e.target).find('[name=title]').val(),
-            content: $(e.target).find('[name=content]').val()
+            text: $(e.target).find('[name=text]').val()
         }
         Posts.update(currentPostId, { $set: postProperties }, function (error) {
             if (error) {
