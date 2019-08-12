@@ -33,3 +33,5 @@ accounts-password
 mpowaga:autoform-summernote
 fortawesome:fontawesome
 aldeed:collection2-core
+
+cfs:gridfs
